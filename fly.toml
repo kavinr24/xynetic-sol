@@ -1,0 +1,16 @@
+# Fly.io worker configuration for the Solana memecoin harvester.
+# This app has no HTTP server, so it intentionally defines no services or
+# health checks. Fly runs the process and restarts it if it fails.
+app = "xynetic-sol"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[processes]
+  harvester = "python harvester.py"
+
+[env]
+  PYTHONUNBUFFERED = "1"
+
+[[restart]]
+  policy = "on-failure"
