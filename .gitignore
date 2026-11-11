@@ -1,0 +1,68 @@
+# ---------- Secrets: environment files ----------
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+
+# ---------- Secrets: credentials & tokens ----------
+secrets.*
+credentials.*
+auth.json
+token*.json
+*_token*
+*_secret*
+*_credential*
+service-account*.json
+.netrc
+.npmrc
+.pypirc
+.git-credentials
+
+# ---------- Secrets: keys & certificates ----------
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.crt
+*.cer
+id_rsa
+id_rsa.*
+id_ed25519
+id_ed25519.*
+*.ppk
+
+# ---------- Cloud & tool credentials ----------
+.ssh/
+.aws/
+.gcp/
+.azure/
+.kube/
+*.tfstate
+*.tfstate.backup
+*.tfvars
+
+# ---------- Editor / OS ----------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# ---------- Logs ----------
+*.log
+logs/
+
+# ---------- Dependencies / build ----------
+node_modules/
+dist/
+build/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# ---------- Agent runtime ----------
+.freebuff/
