@@ -64,5 +64,11 @@ __pycache__/
 .venv/
 venv/
 
+# ---------- Harvested data ----------
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
 # ---------- Agent runtime ----------
 .freebuff/
